@@ -1,0 +1,23 @@
+{
+    "cpts": [{
+        "name": "pelota",
+        "slug": "pelotas"
+    }, {
+        "name": "iniciativa",
+        "slug": "iniciativas"
+    }, {
+        "name": "institucion",
+        "slug": "instituciones"
+    }, {
+        "name": "evento",
+        "slug": "eventos"
+    }],
+    "pages": [{
+        "name": "nosotros",
+        "template": "page-nosotros.php"
+    }, {
+        "name": "noticias",
+        "template": "page-noticias.php"
+    }],
+    "taxonomies": []
+}

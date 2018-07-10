@@ -1,0 +1,201 @@
+.arreglo{
+	overflow: hidden;
+}
+
+.separador_sm{
+	margin-bottom: 40px;
+}
+
+.iniciativa h2{
+	margin-bottom: 10px;
+}
+.iniciativa div{
+	min-height: 195px;
+}
+/*CETPRO*/
+
+
+
+.caja_cetpro{
+	border:solid 2px #118ec5;
+	padding: 20px;
+
+}
+
+
+.title{
+	
+	color: red;
+}
+/*FIN*/
+
+/*DEVIDA*/
+
+.caja_devida{
+
+	border:solid 2px #0ca500;
+	padding: 20px;
+}
+.titulo{
+	
+	color:#00b2f2;
+}
+
+
+/*FIN*/
+
+
+/*ifejan*/
+
+.caja_ifejant{
+	border:solid 2px #006d93;
+	padding: 20px;
+}
+
+.titel{
+	
+	color:#70539b;
+
+}
+
+/*fin*/
+
+/*CAMBIANDO-VIDAS*/
+
+.caja_cambiandoVidas{
+
+border:solid 2px #c75979;
+padding: 20px;
+
+}
+
+.nonbre{
+	
+	color:#e7b71b;
+
+}
+
+/*FIN*/
+
+/*yanapaqui*/
+
+ .caja_yanapaqui{ 
+ 	 border:solid 2px #7eb83b;
+ 	 padding: 20px;
+
+ }
+ .b{
+	 color:#ed731e;
+
+
+ }
+/*fin*/
+
+
+
+/*Via codigo*/
+.caja_viaCodigo{
+	border:solid 2px #e24d4c;
+	padding: 20px;
+}
+
+.d{
+	
+	color:#144665;
+}
+
+/*fin*/
+
+
+
+
+/*PUCP*/
+.caja_pucp{
+	border:solid 2px #9d1324;
+	padding: 20px;
+
+}
+
+.f{
+	
+	color:#0f4279;
+}
+
+/*FIN*/
+
+
+/*ministerio*/
+
+.i{
+	border:solid 2px #5b5a5d;
+	padding: 20px;
+}
+.j{
+	
+	color:#b51f23;
+}
+
+/*fin*/
+
+/*cometa*/
+.k{
+	border:solid 2px #42902b;
+	padding: 20px;
+}
+
+.l{
+	
+	color:#312767;
+}
+
+/*fin */
+
+
+/*la molina*/
+.m{
+	border:solid 2px #3379ce;
+	padding: 20px;
+}
+.ñ{
+	
+	color:#140e10;
+}
+
+/*fin */
+
+
+/*UCSS*/
+
+.o{
+
+	border:solid 2px #495259;
+	padding: 20px;
+}
+.p{
+	margin-bottom: 0px;
+	color:#9a9fa9;
+}
+
+/*FIN*/
+
+
+
+.info{
+	width: 70%;
+	display: block;
+	float: left;
+}
+
+.logo{
+	width: 30%;
+	display: block;
+	float: left;	
+}
+ .logo img{
+ 	max-height: 139px;
+ }
+.env_pro{
+	color: #4bc6b9;
+	font-size: 20px;
+	cursor: pointer;
+}

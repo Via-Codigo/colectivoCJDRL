@@ -1,0 +1,51 @@
+
+.title{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.title-2{
+    /* color: #4bc6b9; */
+    color: #6ba292;
+}
+
+.conteiner-link{
+    display: inline-flex;
+
+}
+.logo{
+     padding: 15px; 
+     margin-left: auto;
+     margin-right: auto;
+}
+
+.link{
+    margin-left: 20px;
+    
+}
+.proyecto{
+    border:5px solid #4bc6b9;
+    padding: 25px;
+    min-height: 580px;
+}
+
+.proyecto-abajo{
+    /* padding: 10px; */
+}
+
+.glyphicon{
+    margin-right: 5px;
+}
+
+.proyecto-contacto{
+    line-height: 1.8;
+}
+.matiene_alto{
+    min-height: 620px;
+}
+
+.img_pro{
+    min-height: 217px;
+    display: flex;
+    align-items: center;
+}

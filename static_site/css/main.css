@@ -1,0 +1,317 @@
+ /* ******EMPECEMOS******/
+
+*{
+    box-sizing: border-box;
+}
+ /**Header*/
+ a{
+    transition: all 0.3s ease 0s;
+
+ }
+.d_flex{
+    display: flex;
+}
+.align_itemsC{
+    align-items: center;
+}
+.d_inlineF{
+    display: inline-flex;
+}
+#nav-menu-container ul li{
+    display: inline-flex;
+    padding: 10px 10px 3px 10px;
+}
+#nav-menu-container a{
+    font-weight: bold;
+}
+.menu_celular{
+    position: absolute;
+    right: 0;
+    list-style: none;
+    width: 100%;
+    top: 64px;
+    text-align: center;
+    line-height: 2.5;
+    padding: 0;
+    background-color: #93827f;
+}
+.menuCasi{
+    height: 0;
+    visibility: hidden;
+    z-index: -5;
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+.menuListo {
+    visibility: visible;
+    z-index: 999;
+    height: 50vh;
+}
+.menuHA >span:after{
+    content:"";
+    border-bottom: 2px solid white;
+    width: 20px;
+    height: 5px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+#menuH{
+    position: absolute;
+    right: 30px;
+}
+.contactos{
+    font-size: 20px;
+}
+/**Main*/
+#main{
+    position: relative;
+    z-index: 1;
+}
+h2{
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+h3{
+    font-weight: 900;
+}
+h3>a{
+    color: inherit;
+}
+/*Noticias singulares*/
+        h4{
+            font-weight: 900;
+            font-size: 40px;
+            text-align: center;
+        }
+        .tema_noticia{
+            font-size: 23px;
+            text-align: center;
+        }
+/*Eventos singulares*/
+
+        .tema_evento{
+            font-size: 23px;
+            text-align: center;
+        }
+        .calendario_event{
+            width: 120px;
+            margin-top: 12px;
+            margin-bottom: 10px;
+        }
+            .dia_event{
+                width: 100%;
+                padding: 9px;
+                padding-left: 43px;
+                display: block;
+                font-size: 30px;
+                color: #4bc6b9;
+                background-color: #93827f;
+            }
+            .mes_event{
+                display: block;
+                font-size: 18px;
+                padding: 11px 3px 10px 6px;
+                padding-right: 7px;
+                color: #93827f;
+                background-color: #4bc6b9;
+                width: 100%;
+                text-align: center;
+            }
+
+h5{
+    font-weight: 900;
+    font-size: 24px;
+    color: #4bc6b9;
+}
+.noticias{
+   margin: 5px;
+    padding: 20px;
+    border: solid 1px #4bc6b9;
+}
+    .noticia{
+        margin-bottom: 20px;
+    }
+    .noticias:hover{
+        background-color: #319433;
+        box-shadow: -3px 3px 12px #319433;
+        transition: background-color 1000ms; 
+       border-color:#6ba292;
+    }
+    .noticia_footer{
+        display: flex;
+        justify-content: space-between;
+    }
+    .division_eventos{
+        border-radius: 100px;
+        margin: 5px;
+    }
+    .evento_container{
+        display: flex;
+        margin: 10px;
+        margin-left: 20px;
+    }
+        .calendario{
+            width: 120px;
+        }
+            .dia{
+                width: 82%;
+                padding: 3px;
+                padding-left: 27px;
+                display: block;
+                font-size: 30px;
+                color: #4bc6b9;
+                background-color: #93827f;
+            }
+            .mes{
+                display: block;
+                font-size: 18px;
+                padding: 6px 4px 6px 6px;
+                padding-right: 7px;
+                color: #93827f;
+                background-color: #4bc6b9;
+                width: 82%;
+                text-align: center;
+            }
+        .evento{
+            width: 70%;
+            align-items: center;
+            display: inline-flex;
+        }
+    .img_evento{
+     text-align: center;
+     border: solid 1px #4bc6b9;
+     padding: 20px;
+     margin: 15px 0px 15px 0px;
+    }
+        .img_complet{
+            margin: auto;
+        }
+.cale_evn{
+    padding: 35px;
+}
+    .dat_num_evento{
+        display: flex;
+        align-items: center;
+    }
+        .nume_event{
+          margin-right: 5px;
+          font-size: 60px;
+          color: #4bc6b9;
+        }
+        .titul_event{
+            margin: 0;
+            color: #93827f;
+        }
+.formulario{
+    padding: 20px;
+}
+    .linea{
+        width: 90%;
+        height: 2px;
+        background-color: #93827f;
+        margin-left: 3%;
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+    .form-control{
+        border: none;
+        border-bottom: 1px solid #4bc6b9;
+        -webkit-box-shadow: none;
+        background-color: none;
+        border-radius: 0px;
+        box-shadow: none;
+    }
+    .form button{
+        border-color : #4bc6b9;
+    }
+    .conta_cont{
+        margin-bottom: 30px;
+    }
+.contacto-texto{
+    font-size: 25px;
+    color: #6ba292;
+    line-height: 2;
+    font-family: cursive;
+    font-style: italic;
+    margin-left: 25px;
+}
+.contacto-text{
+    padding-top: 50px;
+    font-size: 25px;
+    color: #6ba292;
+    line-height: 2;
+    font-family: cursive;
+    font-style: italic;
+    margin-left: 25px;
+}
+    /*footer*/
+#footer{    
+    padding: 20px;
+}
+    #footer p{
+        line-height: 1.9;
+        font-weight: 500;
+    }
+
+    .evento_footer{
+        margin-left: 10px;
+    }
+    .a_color_new{
+        color: white;
+    }
+        .contacto_footer{
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+.icon_footer img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.color_new_img{
+    background-color: #77b3d4;
+    border-radius: 100%;
+}
+.separador{
+    margin-bottom: 100px;
+}
+.separador_xs{
+    margin-bottom: 50px;
+}
+
+/*buton*/
+
+#scrollUp{
+    bottom: 0;
+    font-size: 24px;
+    right: 30px;
+    width: 40px;
+    background: #4bc6b9;
+    color: white;
+    text-align: center;
+    height: 40px;
+    line-height: 38px;
+    border-radius: 0;
+    box-shadow: 2px 10px 8px rgba(0, 0, 0, 0.15);
+}
+
+/*buscador*/
+
+.busqueda-input{
+    width: 88%;
+    border: #4bc6b9 solid 2px;
+    line-height: 2.5;
+    padding-left: 15px;
+    letter-spacing: 1px;
+    outline-color: transparent;
+}
+.busqueda-icon{
+    background-color: #4bc6b9;
+    color: white;
+    padding: 10px;
+    margin-left: -7px;
+    font-size: 16px;
+    height: 41px;
+    padding-top: 11px;
+}
