@@ -7,6 +7,19 @@ function display_address_element()
     <?php
 }
 
+function display_email_element()
+{
+    ?>
+        <input type="text" name="email" id="email" value="<?php echo get_option('email'); ?>" />
+    <?php
+}
+
+function display_footer_desc_element()
+{
+    ?>
+        <textarea type="text" name="footer_desc" id="footer_desc"  ><?php echo get_option('footer_desc'); ?></textarea>
+    <?php
+}
 
 function display_district_element()
 {
@@ -47,6 +60,8 @@ function display_google_maps_element()
     	<input type="url" name="google_maps_url" id="google_maps_url" value="<?php echo get_option('google_maps_url'); ?>" />
     <?php
 }
+
+
 }
 
 function display_theme_panel_location()
@@ -57,7 +72,8 @@ function display_theme_panel_location()
 
 	// add_settings_field( $id, $title, $callback, $page, $section, $args );
     // go to this link for more information https://codex.wordpress.org/Function_Reference/add_settings_field
-
+    add_settings_field("email", "Email", "display_email_element", "general-info-location", "location-links");
+    add_settings_field("footer_desc", "Descripcíon que va en el footer", "display_footer_desc_element", "general-info-location", "location-links");
 	add_settings_field("address", "Address", "display_address_element", "general-info-location", "location-links");
 	add_settings_field("district", "District", "display_district_element", "general-info-location", "location-links");
 	add_settings_field("postal_code", "Postal Code", "display_postal_code_element", "general-info-location", "location-links");
@@ -75,6 +91,8 @@ function display_theme_panel_location()
     register_setting("location-links", "country");
     register_setting("location-links", "phone");
     register_setting("location-links", "google_maps_url");
+    register_setting("location-links", "email");
+    register_setting("location-links", "footer_desc");
     
 }
 

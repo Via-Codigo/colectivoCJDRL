@@ -38,7 +38,7 @@
                             <a href="index.html">
                                     <img src="<?php echo get_stylesheet_directory_uri() . "/source/images/logo.png" ?>" class="img-responsive" alt="mapa">
                                 </a>
-                                <p class="a_color_new">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque corporis earum sequi voluptatem quasi iusto tempore. Est quisquam cumque earum exercitationem distinctio, molestiae modi maiores minima, voluptas saepe, assumenda ea.</p>
+                                <p class="a_color_new"><?php echo get_option("footer_desc"); ?></p>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-5 col-lg-4 col-lg-offset-4 col-md-offset-2">
@@ -47,22 +47,22 @@
                             <div class="icon_footer">
                                     <img src="<?php echo get_stylesheet_directory_uri() . "/source/images/map.png" ?>" class="img-responsive" alt="mapa">
                             </div>
-                            <a href="#" target="_blank" class="a_color_new">CJDRL av.la paz 1725 
-                                San Miguel</a>
+                            <a href="<?php get_option("google_maps_url"); ?>" target="_blank" class="a_color_new"><?php echo get_option("address"); ?> 
+                                <?php echo get_option("district"); ?></a>
                         </div>
                         <div class="contacto_footer">
                                 <div class="icon_footer">
                                         
                                         <img src="<?php echo get_stylesheet_directory_uri() . "/source/images/call.png" ?>" class="img-responsive" alt="phone">
                                 </div>
-                                <a href="tel:+5198883813" class="a_color_new">Numero: 98883813
+                                <a href="tel:<?php echo get_option("phone"); ?>" class="a_color_new">Numero: <?php echo get_option("phone"); ?>
                                 </a>
                       </div>
                       <div class="contacto_footer">
                             <div class="icon_footer">
                                     <img src="<?php echo get_stylesheet_directory_uri() . "/source/images/message.png" ?>" class="img-responsive" alt="mapa">
                             </div>
-                            <a href="mailto:algo@colectivo.com" class="a_color_new">algo@colectivo.com</a>
+                            <a href="mailto:<?php echo get_option("email"); ?>" class="a_color_new"><?php echo get_option("email"); ?></a>
                       </div>
                 </div>
             </div>
