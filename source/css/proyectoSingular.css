@@ -8,7 +8,7 @@
 }
 
 .links{
-    display: flex;
+    display: block;
 }
 
 .link{
@@ -27,6 +27,8 @@
 }
 .parrafos{
     margin-left: 15px;
+    padding: 5px;
+    display: block;
 }
 
 .icono{
@@ -53,7 +55,7 @@ h2,h3{
 }
 
 .contenedor-resaltado{
-    list-style: ;
+    list-style: none;
     padding: 0;
 }
 
@@ -69,7 +71,8 @@ h2,h3{
 .title-h2{
     text-align: center;
     margin: 0;
-    line-height: 220px;
+    padding-bottom: 32px;
+    padding-top: 80px;
     font-size: 54px;
     color:#4bc6b9;
 }
@@ -77,6 +80,7 @@ h2,h3{
 .contenedor-total{
     border:5px solid #4bc6b9;
    margin-top: 30px; 
+   padding-bottom: 20px;
 }
 
 .tamaño{

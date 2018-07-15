@@ -132,26 +132,26 @@ get_header(); ?>
             <div class="row">
                 <div class="col-12 col-md-3 col-lg-3 col-sm-6">
                    <div class="dat_num_evento">
-                        <span class="counter nume_event">100</span>
-                        <h3 class="titul_event">Dato Numerico</h3>
+                        <span class="counter nume_event">23</span>
+                        <h3 class="titul_event">Instituciones Participantes</h3>
                    </div>
                 </div>
                 <div class="col-12 col-md-3 col-lg-3 col-sm-6">
                     <div class="dat_num_evento">
-                        <span class="counter nume_event">100</span>
-                        <h3 class="titul_event">Dato Numerico</h3>
+                        <span class="counter nume_event">56</span>
+                        <h3 class="titul_event">Proyectos Realizados</h3>
                    </div>
                 </div>
                 <div class="col-12 col-md-3 col-lg-3 col-sm-6">
                   <div class="dat_num_evento">
-                        <span class="counter nume_event">100</span>
-                        <h3 class="titul_event">Dato Numerico</h3>
+                        <span class="counter nume_event">500</span>
+                        <h3 class="titul_event">Jovenes Participantes</h3>
                    </div>
                 </div>
                 <div class="col-12 col-md-3 col-lg-3 col-sm-6">
                     <div class="dat_num_evento">
-                        <span class="counter nume_event">100</span>
-                        <h3 class="titul_event">Dato Numerico</h3>
+                        <span class="counter nume_event">4</span>
+                        <h3 class="titul_event">Años trabajando</h3>
                    </div>
                 </div>
             </div>

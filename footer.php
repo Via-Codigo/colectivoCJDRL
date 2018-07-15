@@ -1,6 +1,6 @@
 
 
-
+<?php if(!is_404()): ?>
 <section id="Contacto_form" class="container conta_cont separador_xs">
             <h2  class="colorPpine">Contacto</h2>
             <div class="row">
@@ -29,6 +29,7 @@
                 </div>
             </div>
         </section>
+<?php endif; ?>
      </main>
      <footer id="footer" class="b_colorCcinereous">
         <section class="container">

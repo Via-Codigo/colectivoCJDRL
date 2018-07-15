@@ -11,17 +11,17 @@ function oniros_image_support(){
 	// smaller images do not get resized, but largeones will get cropped.
 
 	//                name             width height crop?
-	add_image_size( 'logos-caja-cuadrada_1x', 318, 128, false);
-	add_image_size( 'logos-caja-cuadrada_2x', 636, 256, false);
-	add_image_size( 'logos-caja-cuadrada_3x', 954, 384, false);
+	add_image_size( 'logos-caja-cuadrada_1x', 320, 9999, false);
+	add_image_size( 'logos-caja-cuadrada_2x', 636, 9999, false);
+	add_image_size( 'logos-caja-cuadrada_3x', 954, 9999, false);
 
-	add_image_size( 'logos-pequeno-caja-echada_1x', 154, 90, false);
-	add_image_size( 'logos-pequeno-caja-echada_2x', 308, 180, false);
-	add_image_size( 'logos-pequeno-caja-echada_3x', 462, 270, false);
+	add_image_size( 'logos-pequeno-caja-echada_1x', 154, 9999, false);
+	add_image_size( 'logos-pequeno-caja-echada_2x', 308, 9999, false);
+	add_image_size( 'logos-pequeno-caja-echada_3x', 462, 9999, false);
 
-	add_image_size( 'logos-grande-caja-echada_1x', 250, 187, false);
-	add_image_size( 'logos-grande-caja-echada_2x', 500, 374, false);
-	add_image_size( 'logos-grande-caja-echada_3x', 750, 561, false);
+	add_image_size( 'logos-grande-caja-echada_1x', 250, 9999, false);
+	add_image_size( 'logos-grande-caja-echada_2x', 500, 9999, false);
+	add_image_size( 'logos-grande-caja-echada_3x', 750, 9999, false);
 
 	add_image_size( 'foto-principal-iniciativa_1x', 360, 270, true);
 	add_image_size( 'foto-principal-iniciativa_2x', 720, 540, true);
@@ -43,22 +43,19 @@ function new_image_sizes($sizes) {
 }
 
 // Unregister native WP image sizes, comment those you want to keep
-add_filter('intermediate_image_sizes_advanced', 'unset_image_sizes');
+//add_filter('intermediate_image_sizes_advanced', 'unset_image_sizes');
 
-function unset_image_sizes( $def_sizes) {
+/*function unset_image_sizes( $def_sizes) {
 	unset( $def_sizes['thumbnail']); // turn off thumbnail size
 	unset( $def_sizes['medium']); // turn off medium size
 	unset( $def_sizes['large']); // turn off large size
 	unset( $def_sizes['medium_large']);
 	return $def_sizes;
-}
+}*/
  
 
 
-/*
- * this hook will be fired while you uploading a picture
- */
-add_filter( 'intermediate_image_sizes', 'limit_image_sizes' );
+
  
 
 

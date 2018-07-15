@@ -10,14 +10,14 @@
 	margin-bottom: 10px;
 }
 .iniciativa div{
-	min-height: 195px;
+	min-height: 200px;
 }
 /*CETPRO*/
 
 
 
-.caja_cetpro{
-	border:solid 2px #118ec5;
+.caja_iniciativa{
+	border:5px solid #4bc6b9;
 	padding: 20px;
 
 }
@@ -25,7 +25,7 @@
 
 .title{
 	
-	color: red;
+	color: #4bc6b9;
 }
 /*FIN*/
 

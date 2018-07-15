@@ -75,6 +75,9 @@ function oniros_scripts(){
 		wp_enqueue_style('instituciones', get_stylesheet_directory_uri().'/source/css/instituciones.css');	
 		wp_enqueue_script('instituciones',get_stylesheet_directory_uri().'/source/js/instituciones.js', array("jquery"), null, true);
 	}
+	if(is_404()){
+		wp_enqueue_style('404', get_stylesheet_directory_uri().'/source/css/404.css');
+	}
 }
 add_action( 'wp_enqueue_scripts', 'oniros_scripts');
 

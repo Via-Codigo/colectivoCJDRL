@@ -15,7 +15,7 @@
 
 	<section class="container">
         <div class="row separador_xs">
-            <div class="col-md-8 col-sm-12 col-lg-offset-4 col-md-offset-2 col-lg-6 col-xs-12">
+            <div class="col-md-8 col-sm-12 col-lg-offset-3 col-md-offset-2 col-lg-6 col-xs-12">
                 <div class="contenedor-busqueda">
                     <input id="busquedaInput" type="text" class="busqueda-input" placeholder="Buscar proyecto">
                     <span class="busqueda-icon glyphicon glyphicon-search"></span>
@@ -37,7 +37,7 @@
 				<?php while($query->have_posts()): $query->the_post(); ?>
 
             <div data-nombre="<?php the_field("keywords"); ?>" class="col-lg-6 col-sm-12 iniciativa  ">
-                <div class=" caja_cetpro arreglo separador_sm">
+                <div class=" caja_iniciativa arreglo separador_sm">
                     
                     <div class="info">
                         <h2 class="title"><?php the_title(); ?>

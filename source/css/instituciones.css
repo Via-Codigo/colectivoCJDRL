@@ -11,26 +11,38 @@
 
 .conteiner-link{
     display: inline-flex;
+    flex-wrap: wrap;
 
 }
 .logo{
      padding: 15px; 
      margin-left: auto;
      margin-right: auto;
+
 }
 
 .link{
     margin-left: 20px;
-    
+    text-transform: capitalize;
 }
 .proyecto{
     border:5px solid #4bc6b9;
     padding: 25px;
-    min-height: 580px;
+    min-height: 805px;
 }
 
-.proyecto-abajo{
+.proyecto-abajo h2{
     /* padding: 10px; */
+    text-transform: uppercase;
+    min-height: 80px;
+}
+
+.proyecto-abajo p{
+    min-height: 140px;
+}
+
+.proyecto-abajo .conteiner-link{
+    min-height: 60px;
 }
 
 .glyphicon{
@@ -48,4 +60,5 @@
     min-height: 217px;
     display: flex;
     align-items: center;
+    max-height: 217px;
 }

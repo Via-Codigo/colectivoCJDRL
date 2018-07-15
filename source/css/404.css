@@ -1,0 +1,45 @@
+.minion{
+    margin: auto;
+    width: 30%;
+}
+
+.titulo-principal{
+    font-size: 200px;
+    text-align: center;
+    color: aquamarine;
+    margin-bottom: 50px;
+}
+
+.texto-p{
+    color: darkgreen;
+    font-size: 50px;
+    text-align: center;
+    font-style: italic; 
+    margin-bottom: 50px;  
+}
+
+.link-boton{
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    margin: auto;
+    width: 250px;
+    border: 2px solid #4b5653;
+    background-color: darkgreen;
+    border-radius: 5px;
+}
+
+.link-boton:hover{
+    background-color: #9ecd70;
+}
+
+.link{
+    color: white;
+
+}
+
+.link:hover{
+    color: #4b5653;
+    text-decoration: none;
+    cursor: pointer;
+}

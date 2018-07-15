@@ -13,7 +13,7 @@
 <?php get_header(); ?>
  <section class="container">
     <div class="row separador_xs">
-        <div class="col-md-8 col-sm-12 col-lg-offset-4 col-md-offset-2 col-lg-6 col-xs-12">
+        <div class="col-md-8 col-sm-12 col-lg-offset-3 col-md-offset-2 col-lg-6 col-xs-12">
             <div class="contenedor-busqueda">
                 <input id="busquedaInput" type="text" class="busqueda-input" placeholder="Buscar proyecto">
                 <span class="busqueda-icon glyphicon glyphicon-search"></span>
@@ -60,10 +60,15 @@
 		       <?php $projects = get_field("projects");
 		       		if($projects):
 		        ?>
-		       <h3 class="title-2">Proyectos en el CJDRL</h3>
+		       <h3 class="title-2">Algunos Proyectos en el CJDRL</h3>
 		       <div class="conteiner-link">
-		       	<?php foreach ($projects as $project):?>
+		       	<?php 
+		       		$counter = 0;
+		       	foreach ($projects as $project):?>
 		         	<a class="link" href="<?php echo get_permalink( $project->ID ) ?>"><?php echo get_the_title( $project->ID ); ?></a>
+		         	<?php $counter +=1; 
+		         		
+		         		if($counter === 3){break;}?>
 		         <?php endforeach; ?>
 		         </div>  
 		   		<?php endif; ?>
