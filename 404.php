@@ -20,7 +20,7 @@
 
     <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12">
-            <p class="texto-p">Oinkk Oinkk esta pagina no existe retorna al inicio</p>
+            <p class="texto-p">Oinkk Oinkk! Esta página no existe. Retorna al inicio</p>
         </div>
     </div>
 

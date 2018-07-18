@@ -62,3 +62,7 @@
     align-items: center;
     max-height: 217px;
 }
+
+.img_pro img{
+    max-height: 217px;
+}

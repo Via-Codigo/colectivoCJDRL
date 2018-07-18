@@ -47,15 +47,30 @@
 		       <h2 class="title"><?php the_title(); ?></h2>
 		       <p><?php the_field("desc"); ?></p>
 		       <div class="row">
+				   <?php 
+						 $phone = get_field("phone");
+						 $email = get_field("email");
+						 $website = get_field("website_url");  
+				   ?> 
+				   <?php
+				   if($website): ?>
 		           <div class="col-sm-12">
-		               <a href="<?php the_field("website_url"); ?>"><span class="proyecto-contacto glyphicon glyphicon-globe"></span>Pagina Web</a>
+		               <a target="_blank" href="<?php echo $website; ?>"><span class="proyecto-contacto glyphicon glyphicon-globe"></span>Pagina Web</a>
 		           </div>  
+				   <?php endif;
+				   		if($phone):
+				    ?>
 		           <div class="col-sm-12">
 		             <a href="tel:<?php the_field("phone"); ?>"><span class="proyecto-contacto glyphicon glyphicon-earphone"></span><?php the_field("phone"); ?></a>
 		           </div>  
+
+		       <?php endif; 
+		       		if($email):
+		        ?>
 		           <div class="col-sm-12">
 		             <a href="mailto:<?php the_field("email"); ?>"><span class="proyecto-contacto glyphicon glyphicon-envelope"></span><?php the_field("email"); ?></a>
 		           </div>  
+		       <?php endif; ?>
 		       </div>    
 		       <?php $projects = get_field("projects");
 		       		if($projects):

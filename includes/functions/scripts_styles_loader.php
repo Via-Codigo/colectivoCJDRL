@@ -78,6 +78,9 @@ function oniros_scripts(){
 	if(is_404()){
 		wp_enqueue_style('404', get_stylesheet_directory_uri().'/source/css/404.css');
 	}
+	if(is_page( 'nosotros' )){
+		wp_enqueue_style('nosotros', get_stylesheet_directory_uri().'/source/css/nosotros.css');
+	}
 }
 add_action( 'wp_enqueue_scripts', 'oniros_scripts');
 

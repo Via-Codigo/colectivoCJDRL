@@ -10,6 +10,11 @@ Template Name: Nosotros
  <?php get_header(); ?>
 
 <section class="container">
+            <div class="row separador">
+                <div class="col-xs-12">
+                    <h1 class="eje_center colorSserpent main-title"><?php the_title(); ?></h1>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-lg-4 col-xs-12 col-lg-offset-1 separador_xs">
                     <h2 class="eje_center colorSserpent">Quienes somos</h2>

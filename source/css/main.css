@@ -226,6 +226,9 @@ h5{
     }
     .conta_cont{
         margin-bottom: 30px;
+        padding-top: 65px;
+        margin-top: 50px;
+        border-top: #4bc6b9 solid 4px;
     }
 .contacto-texto{
     font-size: 25px;
@@ -278,6 +281,10 @@ h5{
 }
 .separador_xs{
     margin-bottom: 50px;
+}
+
+.main-title{
+    font-weight: bold;
 }
 
 /*buton*/
