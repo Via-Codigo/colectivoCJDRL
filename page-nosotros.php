@@ -37,15 +37,15 @@ Template Name: Nosotros
         <section class="container">
             <div class="row">
                 <div class="col-lg-4 col-xs-12">
-                    <h2 class="eje_center colorSserpent">Eje 1</h2>
+                    <h2 class="eje_center colorSserpent">Eje Político Legal</h2>
                     <p><?php the_field("axis_1"); ?></p>
                 </div>
                 <div class="col-lg-4 col-xs-12">
-                    <h2 class="eje_center colorSserpent">Eje 2</h2>
+                    <h2 class="eje_center colorSserpent">Eje Comunicacional</h2>
                     <p><?php the_field("axis_2"); ?></p>
                 </div>
                 <div class="col-lg-4 col-xs-12">
-                    <h2 class="eje_center colorSserpent">Eje 3</h2>
+                    <h2 class="eje_center colorSserpent">Eje Gestión de Evidencias</h2>
                     <p><?php the_field("axis_3"); ?></p>
                 </div>
             </div>
@@ -53,11 +53,11 @@ Template Name: Nosotros
         <section class="container">
             <div class="row separador">
                 <div class="col-lg-4 col-xs-12 col-lg-offset-2">
-                    <h2 class="eje_center colorSserpent">Eje 4</h2>
+                    <h2 class="eje_center colorSserpent">Eje Formativo</h2>
                     <p><?php the_field("axis_4"); ?></p>
                 </div>
                 <div class="col-lg-4 col-xs-12">
-                    <h2 class="eje_center colorSserpent">Eje 5</h2>
+                    <h2 class="eje_center colorSserpent">Eje Institucional</h2>
                     <p><?php the_field("axis_5"); ?></p>
                 </div>
             </div>
