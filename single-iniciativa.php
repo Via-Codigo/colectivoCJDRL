@@ -82,24 +82,23 @@
 
 	                <?php 
 
-	                	$otras_iniciativas = new WP_Query(array(
-	                		"post_type" => "iniciativa",
-	                		"posts_per_page" => -1,
-	                		'post__not_in' => array(get_the_ID())
-	                	));
-	                 ?>
-	                 <?php if($otras_iniciativas->have_posts()): ?>
+	                	$otras_iniciativas_institucionales = get_field("projects", $institucion->ID);
+	                	
+	                	
+	                if(!empty($otras_iniciativas_institucionales)): ?>
 	                <div class="row">
 	                    <div class="col-lg-12 col-md-12 col-sm-12">
 	                        <h3 class="title-2">Otros Proyectos en CJDRL</h3>
 	                        <ul class="lista">
-	                        	<?php while($otras_iniciativas->have_posts()): $otras_iniciativas->the_post();_ ?>
-	                            <li class="listado"><a class="link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
-	                            <?php endwhile; ?>
+	                 			<?php foreach ($otras_iniciativas_institucionales as $iniciativa):?>
+		                        	<?php if($iniciativa->ID != get_the_ID()): ?>
+		                            	<li class="listado"><a class="link" href="<?php the_permalink($iniciativa->ID) ?>"><?php echo $iniciativa->post_title; ?></a></li>
+		                            <?php endif; ?>
+	            				<?php endforeach; ?>
 	                        </ul>
 	                    </div>
 	                </div>
-	            <?php endif; wp_reset_postdata(); ?>
+	            <?php endif; ?>
 	            </div> 
 	        </div>    
 	
