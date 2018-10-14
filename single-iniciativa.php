@@ -85,7 +85,7 @@
 	                	$otras_iniciativas_institucionales = get_field("projects", $institucion->ID);
 	                	
 	                	
-	                if(!empty($otras_iniciativas_institucionales)): ?>
+	                if(!empty($otras_iniciativas_institucionales) && count($otras_iniciativas_institucionales) > 1): ?>
 	                <div class="row">
 	                    <div class="col-lg-12 col-md-12 col-sm-12">
 	                        <h3 class="title-2">Otros Proyectos en CJDRL</h3>
