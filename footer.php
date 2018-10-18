@@ -25,7 +25,7 @@
                 </div>
                 <div class="col-sm-12 col-md-6">
                     <p class="contacto-texto">Si tienes una iniciativa que quisera unirse, escríbenos!</p>
-                    <p class="contacto-text">Se parte de esta comunidad y ayuda a los que mas lo necesitan!</p>
+                    <p class="contacto-text">Sé parte de esta comunidad y ayuda a los que más lo necesitan!</p>
                 </div>
             </div>
         </section>
