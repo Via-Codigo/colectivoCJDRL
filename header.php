@@ -47,7 +47,7 @@
                 <div class="row d_flex align_itemsC">
                     <div id="logo" class="col-sm-4">
                         <a href="<?php echo home_url( "/" ); ?>">
-                            <img src="<?php echo get_stylesheet_directory_uri() . "/source/images/logo.png" ?>" class="img-responsive" alt="titulo">
+                            <img src="<?php echo get_stylesheet_directory_uri() . "/source/images/logo-new.png" ?>" class="img-responsive" alt="titulo">
                         </a>
                     </div>
                     <?php get_template_part("includes/templates/menu"); ?>

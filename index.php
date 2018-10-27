@@ -21,9 +21,11 @@ get_header(); ?>
             		));
             		// var_dump($news_query);
 
-    		if($news_query->have_posts()):
+    		
 		 ?>
 <section class="container noticia separador_xs">
+            <h1 class="colorPpine">Colectivo Oportunidad al Cambio</h1>
+            <?php if($news_query->have_posts()): ?>
             <h2 class="colorPpine">Noticias</h2>
             <div class="row">
             	<?php 
@@ -81,24 +83,33 @@ get_header(); ?>
         <?php endif; wp_reset_postdata(); ?>
 
         <?php 
-        	$iniciativas_query = new WP_Query(array(
-        		"posts_per_page" => 6,
-        		"order_by"=> "rand",
-        		"post_type"=> "iniciativa"
+        	$instituciones_query = new WP_Query(array(
+        		"posts_per_page" => -1,
+        		
+        		"post_type"=> "institucion"
         	));
+            
 
-        	if($iniciativas_query->have_posts()):
+        	if($instituciones_query->have_posts()):
          ?>
         <section class="container separador_xs">
-            <h2 class="colorPpine">Iniciativas</h2>
+            <h2 class="colorPpine">Algunas Iniciativas</h2>
             <div class="row">
-                <?php while($iniciativas_query->have_posts()): $iniciativas_query->the_post(); ?>
+                <?php while($instituciones_query->have_posts()): $instituciones_query->the_post(); 
+                    
+                    $projects = get_field("projects");
+                    $random_project_index = array_rand($projects);
+                    $random_project = $projects[$random_project_index];
+                    // var_dump($random_project);
+                    if(!empty($projects) && $random_project->post_status == "publish"):
+
+                ?>
                 <div class="col-lg-4">
                         <div class="img_evento">
-
+                            
                         	<?php 
 
-                        		$instituciones = get_posts(array(
+                        		/*$instituciones = get_posts(array(
                         			"post_type"=> "institucion",
                         			"meta_query"=>array(
                         				array(
@@ -107,44 +118,71 @@ get_header(); ?>
 											'compare' => 'LIKE'
                         				)
                         			)
-                        		));
+                        		));*/
 
-						        $post_thumbnail_id = get_post_thumbnail_id( $instituciones[0]->ID);
+						        $post_thumbnail_id = get_post_thumbnail_id();
 
 						        if( !empty($post_thumbnail_id) ) {
 						            
 						            echo wp_get_attachment_image( $post_thumbnail_id, $size = 'logos-caja-cuadrada_1x', false, ['class' => 'img-responsive img_complet'] );
 						          }
+                                  
+                                  
+                                  
 						     ?>   
                                 
-                                <h3><?php the_title(); ?></h3>
-                                <p><?php the_field("desc"); ?></p>
-                                <a href="<?php the_permalink( ); ?>">Ver más</a>
+                                <h3><?php echo $random_project->post_title; ?></h3>
+                                <p><?php echo get_field("desc", $random_project->ID); ?></p>
+                                <a href="<?php echo the_permalink( $random_project->ID ); ?>">Ver más</a>
                         </div>
                 </div>
+            <?php endif; ?>
                 
             <?php endwhile; ?>
             </div>
             
         </section>
     <?php endif; wp_reset_postdata(); ?>
+
+
         <section class="container cale_evn separador_xs">
+
+            <?php 
+                $projects_query = new WP_Query(array(
+                    "posts_per_page" => -1,
+                    
+                    "post_type"=> "iniciativa"
+                ));
+                $instituciones_query = new WP_Query(array(
+                    "posts_per_page" => -1,
+                    
+                    "post_type"=> "institucion"
+                ));
+
+                $total_num_participants = 0;
+                foreach ($projects_query->posts as $project) {
+                    $num_parts_project = get_field("num_participants", $project->ID);
+                    $total_num_participants += $num_parts_project;
+                }
+             ?>
             <div class="row">
                 <div class="col-12 col-md-3 col-lg-3 col-sm-6">
                    <div class="dat_num_evento">
-                        <span class="counter nume_event">23</span>
+                        <span class="counter nume_event"><?php  echo count($instituciones_query->posts);?></span>
                         <h3 class="titul_event">Instituciones Participantes</h3>
                    </div>
                 </div>
                 <div class="col-12 col-md-3 col-lg-3 col-sm-6">
                     <div class="dat_num_evento">
-                        <span class="counter nume_event">56</span>
+                        
+                        
+                        <span class="counter nume_event"><?php  echo count($projects_query->posts);?></span>
                         <h3 class="titul_event">Proyectos Realizados</h3>
                    </div>
                 </div>
                 <div class="col-12 col-md-3 col-lg-3 col-sm-6">
                   <div class="dat_num_evento">
-                        <span class="counter nume_event">500</span>
+                        <span class="counter nume_event"><?php echo $total_num_participants; ?></span>
                         <h3 class="titul_event">Jovenes Participantes</h3>
                    </div>
                 </div>
