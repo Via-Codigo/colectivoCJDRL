@@ -29,6 +29,17 @@
 				$args = array(
 			          //Type & Status Parameters
 			          'post_type'   => array('iniciativa'),
+                      'meta_query' => array(
+                        array(
+                          'key' => 'end_date',
+                          'value' => $today,
+                          'type' => 'DATE',
+                          'compare' => '>='
+                        )
+                      ),
+                      'meta_key' => 'end_date',
+                      'orderby' => 'meta_value_num',
+                      
 			          "posts_per_page"=> -1 //change this one to your cpt-slug	          
 			    );
 				$query = new WP_Query( $args ); 
