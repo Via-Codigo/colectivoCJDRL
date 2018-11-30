@@ -6,18 +6,18 @@
             <div class="row">
                 <div class="col-sm-12 col-md-6 formulario">
                     <div class="form">
-                        <form role="form">
+                        <form method="POST" role="form" action="https://formspree.io/info@colectivooportunidadalcambio.com">
                             <div class="form-group">
                                 <label for="email">Email</label>
-                                <input type="email" class="form-control" id="email_1">
+                                <input type="email" name="email" class="form-control" id="email_1">
                             </div>
                              <div class="form-group">
                                 <label for="name">Nombre</label>
-                                <input type="name" class="form-control" id="name_1">
+                                <input type="name" name="name" class="form-control" id="name_1">
                             </div>
                             <div class="form-group">
                                 <label for="message">Mensaje</label>
-                                <textarea name="" class="form-control" cols="30" rows="10"></textarea>
+                                <textarea name="message" class="form-control" cols="30" rows="10"></textarea>
                             </div>
                             <button type="submit" class="btn btn-default">Enviar</button>
                         </form>
@@ -37,7 +37,7 @@
                 <div class="col-12 col-sm-6 col-md-5 col-lg-4">
                     <div class="footer_div_izquierdo">
                             <a href="index.html">
-                                    <img src="<?php echo get_stylesheet_directory_uri() . "/source/images/logo.png" ?>" class="img-responsive" alt="mapa">
+                                    <img src="<?php echo get_stylesheet_directory_uri() . "/source/images/logo-new.png" ?>" class="img-responsive" alt="mapa">
                                 </a>
                                 <p class="a_color_new"><?php echo get_option("footer_desc"); ?></p>
                     </div>

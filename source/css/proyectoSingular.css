@@ -97,3 +97,9 @@ h2,h3{
 .title-2{
     padding: 10px;
 }
+
+@media(max-width: 480px){
+    .title-h2{
+        font-size: 35px;
+    }
+}

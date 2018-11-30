@@ -28,12 +28,17 @@
 	                                <span class="mes_event"><?php echo $datetime->format("M"); ?></span>
 	                            </div>
 	                        </div>
+	                        	<?php 
+	                        		$plan = get_field("plan");
+	                        		if($plan):
+	                        	 ?>
 	                        <div class="col-lg-6 col-lg-offset-2 col-xs-8 col-xs-offset-2 col-sm-5 col-sm-offset-4 col-md-6 col-md-offset-4">
 	                            <h3>Agenda del evento</h3>
 	                            <div>
-	                            	<?php the_field("plan"); ?>
+	                            	<?php echo $plan; ?>
 	                            </div>
 	                        </div>
+	                    <?php endif; ?>
 	                    </div>
 	                </div>
 	            <div class="event_resumen col-lg-6 col-xs-12">
